@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .shadow-xs {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+  .shadow-md {
+    --tw-shadow: 0 12px 7px -7px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+    --tw-shadow-colored: 0 12px 7px -7px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 12px 7px -7px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+[class="dark"] {
+  .rdrDefinedRangesWrapper,
+  .rdrDateRangeWrapper {
+    background-color: #1e1e2f;
+  }
+  .rdrStaticRange:hover {
+    color: #1e1e2f;
+  }
+  .rdrDayNumber span {
+    color: white;
+  }
+  .rdrMonthPicker,
+  .rdrYearPicker {
+    select {
+      color: white;
+    }
+  }
+  .rdrMonthPicker select option,
+  .rdrYearPicker select option {
+    color: #1e1e2f;
+  }
+  .rdrNextPrevButton,
+  .rdrPrevButton {
+    background-color: white;
+  }
+}
+
